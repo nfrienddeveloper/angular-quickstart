@@ -15,16 +15,16 @@ export class AppComponent {
   }
 
   ngOnInit(){
-     
-  }
-
-  onCreateUser(postData: { email: string, name: string){
     this.http.post('https://ddc-v2-staging-api.herokuapp.com/orders', {
       email: 'nfriend.developer@gmail.com',
       name: 'Nathan Friend'
     }).subscribe(data =>{
       console.log(data)
     });
+  }
+
+  onCreateUser(postData: { email: string, name: string } ){
+    
   }
 
   onCreateOrder(){
