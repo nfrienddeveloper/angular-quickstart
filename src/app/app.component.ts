@@ -15,7 +15,7 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    this.http.post('https://ddc-v2-staging-api.herokuapp.com/orders', {
+    this.http.post('https://staging-dreamy.herokuapp.com/orders', {
       email: 'nfriend.developer@gmail.com',
       name: 'Nathan Friend'
     }).subscribe(data =>{
